@@ -1,0 +1,9 @@
+svg {
+	width: 800px;
+	margin: 30px;
+}
+
+path:hover {
+	fill: red;
+	cursor: pointer;
+}

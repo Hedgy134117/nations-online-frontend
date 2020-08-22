@@ -1,0 +1,129 @@
+:root {
+	--textbox-height: 55px;
+	--main-radius: 4px;
+}
+
+* {
+	font-family: 'Open Sans', sans-serif;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: black;
+}
+
+.login-signup {
+	width: 300px;
+	padding: 30px;
+	margin: 30px;
+	background-color: var(--primary1);
+}
+
+.auth-select {
+	font-size: 14px;
+	margin-bottom: 20px;
+	color: #777;
+}
+
+input[type="radio"] {display: none;}
+input[type="radio"] + label {
+	font-weight: 600;
+	text-transform: uppercase;
+	color: lightseagreen;
+	cursor: pointer;
+}
+input[type="radio"] + label:hover {text-decoration: underline;}
+input[type="radio"]:checked + label {
+	color: #eee;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.login {display: none;}
+
+.title {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 15px;
+	color: var(--primary5);
+}
+
+.error {
+	display: none;
+	font-size: 14px;
+	margin-bottom: 3px;
+	color: #f44;
+}
+
+.field {
+	position: relative;
+	margin-bottom: 10px;
+	border-radius: var(--main-radius);
+	overflow: hidden;
+}
+
+.icon {
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	height: var(--textbox-height);
+	width: var(--textbox-height);
+	color: var(--primary4);
+	background-color: var(--primary2);
+}
+
+.text-box {
+	float: left;
+	font-size: 14px;
+	height: var(--textbox-height);
+	width: calc(100% - var(--textbox-height));
+	padding: 0 15px;
+	border: 0;
+	color: var(--primary5);
+	background-color: var(--primary3);
+	box-sizing: border-box;
+}
+.signup-password {
+	padding-right: var(--textbox-height);
+}
+
+.show-hide {
+	position: absolute;
+	display: flex;
+	right: 0;
+	font-size: 15px;
+	height: var(--textbox-height);
+	width: var(--textbox-height);
+	align-items: center;
+	justify-content: center;
+	color: var(--primary5);
+	cursor: pointer;
+}
+
+.button {
+	font-size: 15px;
+	font-weight: 600;
+	height: var(--textbox-height);
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: var(--main-radius);
+	color: #eee;
+	text-transform: uppercase;
+	cursor: pointer;
+	box-sizing: border-box;
+	transition: 0.2s;
+}
+.signup-button {background-color: #ea4c88;}
+.login-button {background-color: royalblue;}
+.button:hover {opacity: 0.8;}
