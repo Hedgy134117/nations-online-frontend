@@ -46,7 +46,7 @@ function login() {
 		success: function(jqXHR, textStatus, errorThrown) {
 			window.localStorage.setItem('username', username);
 			window.localStorage.setItem('password', password);
-			window.location = 'list.html';
+			window.location = 'map.html';
 		},
 		error: function(jqXHR, textStatus, errorThrown) {
 			var errors = JSON.parse(jqXHR.responseText);

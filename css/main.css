@@ -55,6 +55,13 @@ form {
 	color: var(--primary5);
 }
 
+.subtitle {
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 15px;
+	color: var(--primary4);
+}
+
 .error {
 	display: none;
 	font-size: 14px;
