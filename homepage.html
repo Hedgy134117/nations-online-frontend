@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/homepage/main.css">
+    <link rel="stylesheet" href="css/homepage/buildings.css">
+</head>
+<body>
+    <span id='logo'>nations online</span>
+    
+    <nav class='container'>
+        <span>War</span>
+        <span>Military</span>
+        <span>Resources</span>
+        <span>Alliances</span>
+        <span>Map</span>
+        <span>Power</span>
+        <span>Login/Signout</span>
+    </nav>
+
+    <div id='sidebar' class='container'>
+        <div id='resources' class='sidebar-section'>
+            <span><b>Resources</b></span>
+            <span id='food'></span>
+            <span id='iron'></span>
+            <span id='aluminum'></span>
+            <span id='steel'></span>
+            <span id='wood'></span>
+            <span id='raw-uranium'></span>
+            <span id='enriched-uranium'></span>
+            <span id='oil'></span>
+        </div>
+        <div id='construction' class='sidebar-section'>
+            <span><b>Construction</b></span>
+        </div>
+        <div id='update' class='sidebar-section'>
+            <span><b>Time until Update</b></span>
+        </div>
+    </div>
+
+    <main>
+        <div id='tab-startup' class='container tab'>
+            <span class='title' id='name'>Nation Name</span><br>
+            <span id='owner'>Nation Owner</span>
+        </div>
+
+        <div id='tab-resources' class='container tab'>
+            <span class='title'>Resource Buildings</span>
+            <div id='resource-buildings'></div>
+        </div>
+
+        <div id='tab-military' class='container tab'>
+            <span class='title'>Military Buildings</span>
+            <div id='military-buildings'></div>
+        </div>
+    </main>
+
+    <script src='js/homepage.js'></script>
+</body>
+</html>

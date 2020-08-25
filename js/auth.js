@@ -43,9 +43,10 @@ function login() {
 		headers: {
 			'Authorization': 'Basic ' + btoa(username + ':' + password)
 		},
-		success: function(jqXHR, textStatus, errorThrown) {
+		success: function(data) {
 			window.localStorage.setItem('username', username);
 			window.localStorage.setItem('password', password);
+			window.localStorage.setItem('userId', data['id']);
 			window.location = 'map.html';
 		},
 		error: function(jqXHR, textStatus, errorThrown) {

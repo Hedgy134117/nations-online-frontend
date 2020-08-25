@@ -1,0 +1,35 @@
+.building {
+    background-color: var(--primary4);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.building > span {
+    display: block;
+}
+
+.building > span:first-of-type {
+    grid-area: 1 / 1
+}
+
+.building > span:nth-of-type(2) {
+    grid-area: 2 / 1
+}
+
+
+.building-cost {
+    grid-area: 3 / 1
+}
+
+.building > span:first-of-type {
+    font-weight: 700;
+}
+
+.purchase-button {
+    background-color: #ea4c88;
+    grid-area: 1 / 2 / 3 / 3;
+}
